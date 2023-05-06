@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    gap: 1em;
+    justify-items: stretch;
+}
+
+.container>div:nth-child(odd) {
+    background-color: #ddd;
+}
+.container>div:nth-child(even) {
+    background-color: #eee;
+}
+
+.box-1 {
+    align-self: self-start;
+}
+
+.box-2 {
+    align-self: stretch;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.box-3 {
+    align-self: self-end;
+}
+
+.box-4 {
+    justify-self: self-start;
+}
+
+.box-5 {
+    justify-self: center;
+}

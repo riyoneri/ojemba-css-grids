@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-rows: 3fr 3fr; */
+    grid-template-areas: 
+    "nav nav nav nav"
+    "nav nav nav nav"
+    "nav nav nav nav"
+    "aside main main aside2"
+    "aside main main aside2"
+    "aside main main aside2"
+    "aside main main aside2"
+    "aside main main aside2"
+    "aside main main aside2"
+    "footer footer footer sidefooter"
+    "footer footer footer sidefooter"
+    "footer footer footer sidefooter"
+    ;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+    background-color: aqua;
+}
+
+.aside {
+    grid-area: aside;
+    text-align: center;
+    background-color: brown;
+}
+
+.main {
+    grid-area: main;
+    text-align: center;
+    background-color: grey;
+}
+
+.aside2 {
+    grid-area: aside2;
+    text-align: center;
+    background-color: yellowgreen;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: crimson;
+}
+
+.sidefooter {
+    grid-area: sidefooter;
+    text-align: center;
+    background-color: rgb(9, 74, 139);
+}
